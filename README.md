@@ -13,32 +13,53 @@ Soft-master-qa is a test automation project for the soft-master application. It 
 
 ### 📂 Project Structure
 src/
+
 main/java/de/ait/softMaster/
+
 ├─ api/
+
 | ├─ dto/ # DTO objects (fields)
+
 ├─ gui/
+
 │ ├─ core/ # BasePage and core UI classes
+
 │ └─ pages/ # UI page methods
+
 └─ utils/ # Listeners
 
+
 test/java/de/ait/taskTracker/
+
 ├─ api/
+
 │ ├─ config/ # Base API test class
+
 │ └─ tests/ # API tests
+
 ├─ gui/
+
 │ ├─ core/ # Base UI test class
+
 │ └─ tests/ # UI tests
 
+
 test/resources/
+
 ├─ suites/ # TestNG XML suite files
+
 ├─ data/ # CSV files for DataProvider
+
 ├─ data.properties # Configuration properties
+
 └─ logback.xml # Logging configuration
+
 build.gradle
 
 ### ⚙️ Setup Instructions
 Install JDK 17+
-📦 Build and Test Execution
+
+### 📦 Build and Test Execution
 The project uses Gradle as a build tool.
 
 ### Running Tests
@@ -55,15 +76,15 @@ gradle smoky
 gradle positiveAuth -Dbrowser=firefox
 
 ### 🧪 Test Coverage
-API tests: test/java/de/ait/softMaster/api/tests/, use Rest Assured and extend base API TestBase.
+- API tests: test/java/de/ait/softMaster/api/tests/, use Rest Assured and extend base API TestBase.
 
-UI tests: test/java/de/ait/softMaster/gui/tests/, use Selenium WebDriver and Page Object Model.
+- UI tests: test/java/de/ait/softMaster/gui/tests/, use Selenium WebDriver and Page Object Model.
 
 
 ### ➕ Adding New Entities or Tests
 
-Add UI page objects in gui/pages/ and tests in gui/tests/.
+1. Add UI page objects in gui/pages/ and tests in gui/tests/.
 
-Write tests in corresponding test/java/de/ait/softMaster/{api|gui}/tests/.
+2. Write tests in corresponding test/java/de/ait/softMaster/{api|gui}/tests/.
 
-Update TestNG suite XML files in test/resources/suites/.
+3. Update TestNG suite XML files in test/resources/suites/.
