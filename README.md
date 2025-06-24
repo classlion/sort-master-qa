@@ -2,16 +2,16 @@
 
 Soft-master-qa is a test automation project for the soft-master application. It covers UI and API testing using Java, TestNG, Selenium WebDriver, Rest Assured and Gradle. The architecture follows the Page Object Model and supports modular and reusable components.
 
-🚀 Technologies
-Java 17+
-Gradle
-TestNG
-Selenium WebDriver (UI Testing)
-Rest Assured (API Testing)
-Lombok
-Logback
+### 🚀 Technologies
+- Java 17+
+- Gradle
+- TestNG
+- Selenium WebDriver (UI Testing)
+- Rest Assured (API Testing)
+- Lombok
+- Logback
 
-📂 Project Structure
+### 📂 Project Structure
 src/
 main/java/de/ait/softMaster/
 ├─ api/
@@ -35,31 +35,32 @@ test/resources/
 ├─ data.properties # Configuration properties
 └─ logback.xml # Logging configuration
 build.gradle
-⚙️ Setup Instructions
+
+### ⚙️ Setup Instructions
 Install JDK 17+
 📦 Build and Test Execution
 The project uses Gradle as a build tool.
 
-Running Tests
-Running Tests Run all tests:
+### Running Tests
+**Running Tests Run all tests:**
 
 gradle clean test 
 
-Run a specific suite (e.g., smoky):
+**Run a specific suite (e.g., smoky):**
 
 gradle smoky 
 
-Run with a specific browser:
+**Run with a specific browser:**
 
 gradle positiveAuth -Dbrowser=firefox
 
-🧪 Test Coverage
+### 🧪 Test Coverage
 API tests: test/java/de/ait/softMaster/api/tests/, use Rest Assured and extend base API TestBase.
 
 UI tests: test/java/de/ait/softMaster/gui/tests/, use Selenium WebDriver and Page Object Model.
 
 
-➕ Adding New Entities or Tests
+### ➕ Adding New Entities or Tests
 
 Add UI page objects in gui/pages/ and tests in gui/tests/.
 
