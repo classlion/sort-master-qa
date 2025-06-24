@@ -1,6 +1,6 @@
-# soft-master-qa
+# sort-master-qa
 
-Soft-master-qa is a test automation project for the soft-master application. It covers UI and API testing using Java, TestNG, Selenium WebDriver, Rest Assured and Gradle. The architecture follows the Page Object Model and supports modular and reusable components.
+Sort-master-qa is a test automation project for the sort-master application. It covers UI and API testing using Java, TestNG, Selenium WebDriver, Rest Assured and Gradle. The architecture follows the Page Object Model and supports modular and reusable components.
 
 ## 🚀 Technologies
 - Java 17+
@@ -16,7 +16,7 @@ Soft-master-qa is a test automation project for the soft-master application. It 
 ## 📂 Project Structure
 ```
 src/
-main/java/de/ait/softMaster/
+main/java/de/ait/sortMaster/
 ├─ api/
 | ├─ dto/ # DTO objects (fields)
 ├─ gui/
@@ -24,7 +24,7 @@ main/java/de/ait/softMaster/
 │ └─ pages/ # UI page methods
 └─ utils/ # Listeners
 
-test/java/de/ait/taskTracker/
+test/java/de/ait/sortMaster/
 ├─ api/
 │ ├─ config/ # Base API test class
 │ └─ tests/ # API tests
@@ -61,15 +61,15 @@ gradle smoky
 gradle positiveAuth -Dbrowser=firefox
 
 ## 🧪 Test Coverage
-- **API tests**: test/java/de/ait/softMaster/api/tests/, use Rest Assured and extend base API TestBase.
+- **API tests**: test/java/de/ait/sortMaster/api/tests/, use Rest Assured and extend base API TestBase.
 
-- **UI tests**: test/java/de/ait/softMaster/gui/tests/, use Selenium WebDriver and Page Object Model.
+- **UI tests**: test/java/de/ait/sortMaster/gui/tests/, use Selenium WebDriver and Page Object Model.
 
 
 ## ➕ Adding New Entities or Tests
 
 1. Add UI page objects in gui/pages/ and tests in gui/tests/.
 
-2. Write tests in corresponding test/java/de/ait/softMaster/{api|gui}/tests/.
+2. Write tests in corresponding test/java/de/ait/sortMaster/{api|gui}/tests/.
 
 3. Update TestNG suite XML files in test/resources/suites/.
