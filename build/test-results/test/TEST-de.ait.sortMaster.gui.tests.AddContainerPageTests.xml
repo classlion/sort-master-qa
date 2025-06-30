@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.ait.sortMaster.gui.tests.AddContainerPageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-30T18:41:28.112Z" hostname="DESKTOP-OBO8DFL" time="2.515">
+  <properties/>
+  <testcase name="AddNewContainerToBase" classname="de.ait.sortMaster.gui.tests.AddContainerPageTests" time="2.515"/>
+  <system-out><![CDATA[20:41:26.808 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- Open URL - http://localhost:5173/
+20:41:27.868 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Start test AddNewContainerToBase with data: []
+20:41:27.977 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //a[normalize-space()='Add container']]}
+20:41:27.977 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We click on element [[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //a[normalize-space()='Add container']]
+20:41:28.152 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //input[@id='name']]}
+20:41:28.254 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //input[@id='name']]}
+20:41:29.030 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //input[@id='description']]}
+20:41:29.081 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //input[@id='description']]}
+20:41:29.786 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //input[@id='color']]}
+20:41:29.862 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //input[@id='color']]}
+20:41:30.446 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We found element Decorated {[[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //button[normalize-space()='Create Container']]}
+20:41:30.446 [Test worker] INFO de.ait.sortMaster.utils.MyListener -- We click on element [[ChromeDriver: chrome on windows (020f4b665d06d53a8a8447fd1ad3fd88)] -> xpath: //button[normalize-space()='Create Container']]
+20:41:30.627 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- PASSED: AddNewContainerToBase
+20:41:30.627 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- Stop test
+20:41:30.627 [Test worker] INFO de.ait.sortMaster.gui.core.TestBase -- **********************************************************
+]]></system-out>
+  <system-err><![CDATA[Jun 30, 2025 8:41:22 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The chromedriver version (136.0.7103.92) detected in PATH at C:\Tools\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.120); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry
+]]></system-err>
+</testsuite>
