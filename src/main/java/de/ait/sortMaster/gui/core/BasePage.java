@@ -1,9 +1,6 @@
 package de.ait.sortMaster.gui.core;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,9 +26,9 @@ public class BasePage {
         element.click();
     }
 
-    public void type(WebElement element, String text) {
+    public static void type(WebElement element, String text) {
         if (text != null) {
-            click(element);
+            //click(element);
             element.clear();
             element.sendKeys(text);
         }
@@ -46,7 +43,7 @@ public class BasePage {
         return new WebDriverWait(driver, Duration.ofSeconds(time));
     }
 
-    public void pause(int millis) {
+    public static void pause(int millis) {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
@@ -120,5 +117,10 @@ public class BasePage {
         } catch (Throwable t) {
             return false;
         }
+    }
+
+    public static void scrollDown(WebDriver driver, int pixels) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, arguments[0]);", pixels);
     }
 }
